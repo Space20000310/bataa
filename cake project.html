@@ -1,0 +1,218 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .error-container {
+            background-image: linear-gradient(rgba(249, 143, 208, 0.7), rgba(0, 0, 0, 0.7)),
+                              url('https://liliyum.com/cdn/shop/files/pinkbutterflyCake_800x.jpg?v=1711002935');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+       <!-- Navigation (Same as index.html) -->
+       <nav class="bg-pink-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <span class="text-2xl font-bold">LUCINE Bakery</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-semibold hover:text-purple-300">Home</a>
+                    <a href="menu.html" class="font-semibold hover:text-purple-300">Menu</a>
+                    
+                    <a href="contact.html" class="font-semibold hover:text-purple-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <!-- 404 Content -->
+  <div class="error-container min-h-screen flex items-center justify-center text-center text-white px-4">
+    <div>
+        <h1 class="text-6xl md:text-8xl font-bold mb-4">LUCINE</h1>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">bakery</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+            The page you're looking for doesn't exist or has been moved.
+            Maybe our delicious cake flew away with it!
+        </p>
+        <a href="index.html" class="inline-block bg-pink-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+            Back to Home
+        </a>
+        <div class="mt-12 text-center">
+            <p class="mb-4">Try these delicious options instead:</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="menu.html#buckets" class="px-4 py-2 bg-white text-pink-600 rounded-full">Cookies</a>
+                <a href="menu.html#wings" class="px-4 py-2 bg-white text-pink-600 rounded-full">Cupcakes</a>
+                <a href="menu.html#sides" class="px-4 py-2 bg-white text-pink-600 rounded-full">Tarts</a>
+                <a href="menu.html#desserts" class="px-4 py-2 bg-white text-pink-600 rounded-full">Drinks</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+        .form-input:focus {
+            border-color: pink;
+            box-shadow: 0 0 0 1px pink;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation (Same as index.html) -->
+    <div class="bg-pink-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <span class="text-2xl font-bold">LUCINE Bakery</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-semibold hover:text-purple-300">Home</a>
+                    <a href="menu.html" class="font-semibold hover:text-purple-300">Menu</a>
+                    
+                    <a href="contact.html" class="font-semibold hover:text-purple-300">Contact</a>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="relative h-64 md:h-96 overflow-hidden">
+        <img src="https://img.freepik.com/free-photo/close-up-hand-holding-shake_23-2148601351.jpg?semt=ais_hybrid&w=740"
+             alt="Contact Us" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                <p class="text-xl text-white">We'd love to hear from you</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Information -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Contact Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-8 contact-card transition duration-300 text-center">
+                <div class="text-red-600 text-4xl mb-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Our Location</h3>
+                <p class="text-gray-600">123 Cake Street<br>Foodcity, 54678</p>
+            </div>
+            <!-- Contact Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-8 contact-card transition duration-300 text-center">
+                <div class="text-red-600 text-4xl mb-4">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Phone Numbers</h3>
+                <p class="text-gray-600">
+                    Reservations: 89897878<br>
+                    Delivery: 89897878
+                </p>
+            </div>
+            <!-- Contact Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-8 contact-card transition duration-300 text-center">
+                <div class="text-red-600 text-4xl mb-4">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+                <p class="text-gray-600">
+                    General: info@lucinestyle.com<br>
+                    Support: help@lucinestyle.com
+                </p>
+            </div>
+        </div>
+    </section>
+                <!-- Store Hours -->
+                <div class="mt-8 bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Store Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Monday - Thursday</span>
+                            <span>10:00 AM - 10:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Friday - Saturday</span>
+                            <span>10:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Sunday</span>
+                            <span>11:00 AM - 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find quick answers to common questions</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                        <span class="text-lg font-medium">What are your delivery hours?</span>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                        <span class="text-lg font-medium">Do you offer catering services?</span>
+                       
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                        <span class="text-lg font-medium">Is your cake gluten-free?</span>
+                      
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                        <span class="text-lg font-medium">How can I apply for a job?</span>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-pink-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LUCINE</h3>
+                    <p>end yg yu bicih ystoigoo medehgui baisan ymoo.</p>
+                </div>
+    </footer>
+</body>
+</html>

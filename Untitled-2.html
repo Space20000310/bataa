@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tickyock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Ticktock</h1>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px    ;
+            background-color: blue;
+            font-size: 50px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly; 
+        }
+
+    </style>
+</head>
+<body>
+    <p id="count"></p> 
+    <P id="count2"></P>         
+    <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <script>
+        let total=0
+        let total2=0
+        document.getElementById("box1").addEventListener("click", Func)
+        function Func(){
+        total = total + 1
+        if(document.getElementById("box1").innerHTML=="X"){
+        document.getElementById("box1").innerHTML="O"
+        }else{
+        document.getElementById("box1").innerHTML = "X"
+}
+        document.getElementById("count").innerHTML = "X" + total + " udaa daragdsan"
+         }
+        document.getElementById("box2").addEventListener("click", Func2)
+        function Func2(){
+            total2 = total2 + 1
+            if(document.getElementById("box2").innerHTML=="X"){
+                document.getElementById("box2").innerHTML="O"
+               
+                 
+            }else{
+                 document.getElementById("box2").innerHTML = "X"
+            } 
+            document.getElementById("count2").innerHTML = total2 + " udaa daragdsan"
+        }
+    </script>
+</div>
+</body>
+</html>
